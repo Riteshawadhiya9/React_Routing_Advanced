@@ -34,7 +34,7 @@ const App = () => {
         <Route path="/courses" element={<Courses/>} />// dynamic routing k liye ye route bnaya hai 
         <Route path='/courses/:id' element={<CourseDetails/>}/> // this is dynamic routing jisme :id jo hai wo variable hai(matlab id ki jagha kuch bhi likh skte hai) jo alag alag course k id ko represent karega
 
-        <Route path="*" element={<Not_Found />} />
+        <Route path="*" element={<Not_Found />} /> // '*' is used for catch all route, means agar koi bhi route match nhi hota hai to ye route render hoga
       </Routes>
 
       <Footer />
